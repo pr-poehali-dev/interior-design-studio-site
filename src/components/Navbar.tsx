@@ -25,31 +25,31 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        isScrolled ? 'glass-morphism shadow-xl' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-gradient">
           G•M
         </h1>
 
         <div className="hidden md:flex items-center gap-8">
-          <button onClick={() => scrollToSection('hero')} className="text-sm hover:text-accent transition-colors">
+          <button onClick={() => scrollToSection('hero')} className="text-sm font-medium hover:text-primary transition-colors">
             Главная
           </button>
-          <button onClick={() => scrollToSection('portfolio')} className="text-sm hover:text-accent transition-colors">
+          <button onClick={() => scrollToSection('portfolio')} className="text-sm font-medium hover:text-primary transition-colors">
             Портфолио
           </button>
-          <button onClick={() => scrollToSection('services')} className="text-sm hover:text-accent transition-colors">
+          <button onClick={() => scrollToSection('services')} className="text-sm font-medium hover:text-primary transition-colors">
             Услуги
           </button>
-          <button onClick={() => scrollToSection('about')} className="text-sm hover:text-accent transition-colors">
+          <button onClick={() => scrollToSection('about')} className="text-sm font-medium hover:text-primary transition-colors">
             О студии
           </button>
-          <button onClick={() => scrollToSection('process')} className="text-sm hover:text-accent transition-colors">
+          <button onClick={() => scrollToSection('process')} className="text-sm font-medium hover:text-primary transition-colors">
             Процесс
           </button>
-          <Button onClick={() => scrollToSection('contact')} className="bg-accent hover:bg-accent/90 text-primary">
+          <Button onClick={() => scrollToSection('contact')} className="gradient-primary hover:opacity-90 text-white shadow-lg">
             Контакты
           </Button>
         </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border animate-fade-in">
+        <div className="md:hidden glass-morphism border-t border-border animate-fade-in shadow-xl"
           <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
             <button onClick={() => scrollToSection('hero')} className="text-left hover:text-accent transition-colors">
               Главная
@@ -80,7 +80,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('process')} className="text-left hover:text-accent transition-colors">
               Процесс
             </button>
-            <Button onClick={() => scrollToSection('contact')} className="bg-accent hover:bg-accent/90 text-primary w-full">
+            <Button onClick={() => scrollToSection('contact')} className="gradient-primary hover:opacity-90 text-white w-full shadow-lg">
               Контакты
             </Button>
           </div>

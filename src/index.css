@@ -6,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 30 20% 96%;
-    --foreground: 15 30% 15%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 30 25% 98%;
-    --card-foreground: 15 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 30 25% 98%;
-    --popover-foreground: 15 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 15 30% 15%;
-    --primary-foreground: 30 20% 96%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 25% 88%;
-    --secondary-foreground: 15 30% 15%;
+    --secondary: 280 89% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 20 15% 45%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 43 74% 49%;
-    --accent-foreground: 15 30% 15%;
+    --accent: 173 80% 40%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 30 20% 96%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 15% 85%;
-    --input: 30 15% 85%;
-    --ring: 43 74% 49%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 262 83% 58%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -109,5 +109,72 @@
   h5,
   h6 {
     font-family: "Cormorant Garamond", serif;
+  }
+}
+
+@layer utilities {
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .gradient-primary {
+    background: linear-gradient(
+      135deg,
+      hsl(262 83% 58%) 0%,
+      hsl(280 89% 60%) 100%
+    );
+  }
+
+  .gradient-accent {
+    background: linear-gradient(
+      135deg,
+      hsl(173 80% 40%) 0%,
+      hsl(262 83% 58%) 100%
+    );
+  }
+
+  .gradient-mesh {
+    background:
+      radial-gradient(
+        at 27% 37%,
+        hsla(262, 83%, 58%, 0.3) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 97% 21%,
+        hsla(173, 80%, 40%, 0.3) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 52% 99%,
+        hsla(280, 89%, 60%, 0.3) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 10% 29%,
+        hsla(262, 83%, 58%, 0.2) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 97% 96%,
+        hsla(173, 80%, 40%, 0.2) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 33% 50%,
+        hsla(280, 89%, 60%, 0.2) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 79% 53%, hsla(262, 83%, 58%, 0.2) 0px, transparent 50%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(262 83% 58%), hsl(173 80% 40%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

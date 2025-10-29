@@ -26,14 +26,14 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-20 md:py-32 bg-secondary/30">
+    <section id="portfolio" className="py-20 md:py-32 bg-gradient-to-b from-white to-purple-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <span className="text-sm tracking-[0.3em] uppercase text-accent font-medium">
+          <span className="text-sm tracking-[0.3em] uppercase text-gradient font-semibold">
             Наши работы
           </span>
           <h2 className="text-4xl md:text-6xl font-light mt-4 mb-6">
-            Портфолио проектов
+            Портфолио <span className="text-gradient">проектов</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Каждый проект — это уникальное пространство, созданное с вниманием к деталям
@@ -44,7 +44,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.id} 
-              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in"
+              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in rounded-3xl hover:-translate-y-2"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="relative overflow-hidden aspect-[4/5]">
@@ -53,7 +53,7 @@ const Portfolio = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute inset-0 gradient-primary opacity-0 group-hover:opacity-95 transition-opacity duration-500">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <span className="text-xs tracking-[0.2em] uppercase opacity-80 block mb-2">
                       {project.category}

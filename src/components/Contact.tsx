@@ -25,14 +25,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-secondary/30">
+    <section id="contact" className="py-20 md:py-32 gradient-mesh">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <span className="text-sm tracking-[0.3em] uppercase text-accent font-medium">
+          <span className="text-sm tracking-[0.3em] uppercase text-gradient font-semibold">
             Свяжитесь с нами
           </span>
           <h2 className="text-4xl md:text-6xl font-light mt-4 mb-6">
-            Начните свой проект
+            Начните свой <span className="text-gradient">проект</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Расскажите о своих идеях, и мы воплотим их в реальность
@@ -40,7 +40,7 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <Card className="p-8 md:p-12 border-0 shadow-lg animate-fade-in">
+          <Card className="p-8 md:p-12 border-0 shadow-2xl animate-fade-in rounded-3xl glass-morphism">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium mb-2">Ваше имя</label>
@@ -90,7 +90,7 @@ const Contact = () => {
 
               <Button 
                 type="submit" 
-                className="w-full h-12 bg-accent hover:bg-accent/90 text-primary text-base"
+                className="w-full h-12 gradient-primary hover:opacity-90 text-white text-base shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Отправить заявку
                 <Icon name="Send" size={18} className="ml-2" />
@@ -99,10 +99,10 @@ const Contact = () => {
           </Card>
 
           <div className="space-y-6 animate-scale-in">
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-3xl glass-morphism hover:-translate-y-1">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Phone" size={24} className="text-accent" />
+                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Icon name="Phone" size={24} className="text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Телефон</h3>
@@ -112,10 +112,10 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-3xl glass-morphism hover:-translate-y-1">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Mail" size={24} className="text-accent" />
+                <div className="w-12 h-12 rounded-full gradient-accent flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Icon name="Mail" size={24} className="text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Email</h3>
@@ -125,10 +125,10 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-3xl glass-morphism hover:-translate-y-1">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="MapPin" size={24} className="text-accent" />
+                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Icon name="MapPin" size={24} className="text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Адрес</h3>
@@ -138,10 +138,10 @@ const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-3xl glass-morphism hover:-translate-y-1">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Clock" size={24} className="text-accent" />
+                <div className="w-12 h-12 rounded-full gradient-accent flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Icon name="Clock" size={24} className="text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Часы работы</h3>

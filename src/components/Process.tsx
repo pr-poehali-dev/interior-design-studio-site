@@ -38,11 +38,11 @@ const Process = () => {
     <section id="process" className="py-20 md:py-32">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <span className="text-sm tracking-[0.3em] uppercase text-accent font-medium">
+          <span className="text-sm tracking-[0.3em] uppercase text-gradient font-semibold">
             Как мы работаем
           </span>
           <h2 className="text-4xl md:text-6xl font-light mt-4 mb-6">
-            Процесс работы
+            Процесс <span className="text-gradient">работы</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Прозрачный и понятный процесс от первой встречи до реализации
@@ -50,7 +50,7 @@ const Process = () => {
         </div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-accent/20 -translate-y-1/2"></div>
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 gradient-primary rounded-full -translate-y-1/2 opacity-30"></div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 relative">
             {steps.map((step, index) => (
@@ -59,13 +59,13 @@ const Process = () => {
                 className="relative animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="bg-background p-6 rounded-lg border-2 border-accent/20 hover:border-accent transition-colors duration-300">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent flex items-center justify-center text-primary font-bold text-xl">
+                <div className="bg-background p-6 rounded-3xl border-0 shadow-xl hover:shadow-2xl transition-all duration-300 glass-morphism hover:-translate-y-2">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full gradient-primary flex items-center justify-center text-white font-bold text-xl shadow-lg">
                     {step.number}
                   </div>
                   
-                  <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
-                    <Icon name={step.icon} size={24} className="text-accent" />
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-full gradient-accent flex items-center justify-center shadow-md">
+                    <Icon name={step.icon} size={24} className="text-white" />
                   </div>
 
                   <h3 className="text-xl font-semibold text-center mb-3">

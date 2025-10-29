@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="gradient-primary text-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -18,25 +18,25 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Навигация</h4>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#hero" className="hover:opacity-100 hover:text-accent transition-all">Главная</a></li>
-              <li><a href="#portfolio" className="hover:opacity-100 hover:text-accent transition-all">Портфолио</a></li>
-              <li><a href="#services" className="hover:opacity-100 hover:text-accent transition-all">Услуги</a></li>
-              <li><a href="#about" className="hover:opacity-100 hover:text-accent transition-all">О студии</a></li>
-              <li><a href="#process" className="hover:opacity-100 hover:text-accent transition-all">Процесс работы</a></li>
-              <li><a href="#contact" className="hover:opacity-100 hover:text-accent transition-all">Контакты</a></li>
+              <li><a href="#hero" className="hover:opacity-100 hover:underline transition-all">Главная</a></li>
+              <li><a href="#portfolio" className="hover:opacity-100 hover:underline transition-all">Портфолио</a></li>
+              <li><a href="#services" className="hover:opacity-100 hover:underline transition-all">Услуги</a></li>
+              <li><a href="#about" className="hover:opacity-100 hover:underline transition-all">О студии</a></li>
+              <li><a href="#process" className="hover:opacity-100 hover:underline transition-all">Процесс работы</a></li>
+              <li><a href="#contact" className="hover:opacity-100 hover:underline transition-all">Контакты</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Следите за нами</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all group">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:scale-110 flex items-center justify-center transition-all group shadow-md">
                 <Icon name="Instagram" size={20} className="group-hover:text-primary" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all group">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:scale-110 flex items-center justify-center transition-all group shadow-md">
                 <Icon name="Facebook" size={20} className="group-hover:text-primary" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all group">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:scale-110 flex items-center justify-center transition-all group shadow-md">
                 <Icon name="Linkedin" size={20} className="group-hover:text-primary" />
               </a>
             </div>

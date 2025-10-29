@@ -10,19 +10,19 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-secondary to-background">
-      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/files/f69c7bb0-0bf9-4212-bb90-a3392e3d186f.jpg')] bg-cover bg-center opacity-10"></div>
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-mesh">
+      <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/files/f69c7bb0-0bf9-4212-bb90-a3392e3d186f.jpg')] bg-cover bg-center opacity-5"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-6 animate-fade-in">
-            <span className="text-sm tracking-[0.3em] uppercase text-accent font-medium">
+            <span className="text-sm tracking-[0.3em] uppercase text-gradient font-semibold">
               Премиальный дизайн интерьеров
             </span>
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light mb-6 animate-fade-in-up">
-            Проект <span className="italic font-normal">сам по себе</span> является ключом к вдохновению
+            Проект <span className="italic font-normal text-gradient">сам по себе</span> является ключом к вдохновению
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in">
@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-primary px-8 py-6 text-base"
+              className="gradient-primary hover:opacity-90 text-white px-8 py-6 text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               onClick={() => scrollToSection('contact')}
             >
               Начать проект
@@ -42,7 +42,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="px-8 py-6 text-base border-2"
+              className="px-8 py-6 text-base border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300"
               onClick={() => scrollToSection('portfolio')}
             >
               Наши работы
