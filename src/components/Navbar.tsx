@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-morphism border-t border-border animate-fade-in shadow-xl"
+        <div className="md:hidden glass-morphism border-t border-border animate-fade-in shadow-xl">
           <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
             <button onClick={() => scrollToSection('hero')} className="text-left hover:text-accent transition-colors">
               Главная
